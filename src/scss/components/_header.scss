@@ -1,0 +1,137 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+
+    z-index: 2000;
+
+    transition: .2s ease;
+
+    &_scrolled {
+        padding-top: 1rem;
+        background-color: rgba(2,2,2,.5);
+        backdrop-filter: blur(6px);
+
+        & .header__nav {
+            align-items: center;
+        }
+
+        & .header__nav-item {
+            margin: 0;
+        }
+
+        & .header__nav-link {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+
+    &_mobile_show {
+        background-color: rgba(2,2,2,.8);
+
+        animation: slideDown .3s ease forwards;
+
+        & .header__ul {
+            display: block;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo-link {
+        display: inline-block;
+        font-family: $lato;
+        font-size: 2rem;
+        font-weight: 400;
+        color: $white;
+        text-decoration: none;
+    }
+
+    &__ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__nav-item {
+        display: inline-block;
+    }
+
+    &__nav-link {
+        padding: 1rem;
+        font-family: $lato;
+        font-size: 1rem;
+        font-weight: 400;
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            color: $l-gray;
+        }
+    }
+
+    &__btn {
+        display: none;
+        font-size: 1.5rem;
+        padding: .5rem 1rem;
+        color: $white;
+        background: none;
+        outline: none;
+        border: none;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .header {
+        &__ul {
+            display: none;
+            width: 100%;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #676767;
+        }
+
+        &__nav-item {
+            display: block;
+        }
+
+        &__nav-link {
+            display: block;
+            padding-left: 0;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        &__btn {
+            display: inline-block;
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .header {
+        padding-top: 2rem;
+        &__logo-link {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@keyframes slideDown {
+    from {
+        height: 50%;
+    }
+
+    to {
+        height: 100%;
+    }
+}

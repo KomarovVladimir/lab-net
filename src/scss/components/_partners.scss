@@ -1,0 +1,37 @@
+.partners {
+    color: $white;
+    background-color: $black;
+    border-bottom: 1px solid $dark;
+
+    &__row {
+        margin-bottom: -2.5rem;
+    }
+
+    &__item {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    &__logo {
+        display: block;
+        height: 4rem;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .partners {
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .partners {
+    }
+}
+@include media-breakpoint-down(sm) {
+    .partners {
+    }
+}

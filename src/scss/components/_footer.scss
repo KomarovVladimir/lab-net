@@ -1,0 +1,31 @@
+.footer {
+    color: $white;
+    background-color: $black;
+
+    &__logo {
+        font-size: 2.5rem;
+    }
+
+    &__logo-link {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: $l-gray;
+        }
+    }
+
+    &__copyright {
+        text-align: center;
+        font-family: $lato;
+        font-size: 1rem;
+        font-weight: 400;
+        color: $gray;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .footer {
+
+    }
+}

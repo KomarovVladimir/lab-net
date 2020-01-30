@@ -1,0 +1,75 @@
+.faq {
+    position: relative;
+    background-color: $d-white;
+    transition: .5s ease-in;
+
+
+    &__decoration {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 40%;
+        background-image: url("../assets/images/faq.jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 1;
+    }
+
+    &__title {
+        outline: none;
+        cursor: pointer;
+        
+        &:hover {
+            color: $gray;
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__arrow {
+        content: '';
+        display: inline-block;
+        height: .5rem;
+        width: .5rem;
+        margin-left: .5rem;
+        background-image: url(../assets/images/solid-arrow-active.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &_inactive {
+            background-image: url(../assets/images/solid-arrow-inactive.jpeg);
+        }
+    }
+
+    &_inactive {
+        color: $dark;
+    }
+
+    &__text {
+        padding: 0 3rem 2.5rem 2rem;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .faq {
+        &__decoration {
+            display: none;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .faq {
+    }
+}
+
+
+@include media-breakpoint-down(xs) {
+    .faq {
+    }
+}

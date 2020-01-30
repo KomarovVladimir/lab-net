@@ -1,0 +1,54 @@
+.request {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-size: 3.5rem;
+    color: $white;
+    background-color: $black;
+    background-image: url("../assets/images/dots.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__title {
+        margin-bottom: 1.5rem;
+    }
+
+    &__subtitle {
+        margin: 0;
+        font-family: $lato;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 100%;
+    }
+
+    &__btn {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .request {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+
+        &__title {
+            text-align: center;
+            margin-bottom: .5rem;
+        }
+    
+        &__subtitle {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        &__btn {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+@include media-breakpoint-down(xs) {
+    .request {
+    }
+}
