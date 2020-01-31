@@ -1,0 +1,16 @@
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+    font-family: $museo;
+    line-height: 1.2;
+    color: $black;
+}
+
+body {
+    background-color: $white;
+    // background-color: $black;
+}
+
+img {
+    display: block;
+}

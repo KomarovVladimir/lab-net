@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container-fluid">
+            <nav class="header__nav" role="navigation">
+                <a href="#" class="header__logo">
+                    <img src="./images/logo.png" alt="logo">
+                </a>
+                <span class="header__right">
+                    <a  class="header__phone" href="tel:+74999999999">8 499 999 99 99</a>
+                    <button id="header-btn" class="header__btn">
+                    </button>
+                </span>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <section class="title-screen">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="title-screen__content">
+                            <h1 class="h1 wow fadeIn">lorem ipsum dolor sit amet</h1>
+                            <p class="h1__subtitle wow fadeIn" data-wow-delay=".05s"><span class="h1_accent">lorem</span> ipsum dolor sit amet</p>
+                            <ul class="title-screen__awards wow fadeIn" data-wow-delay=".1s">
+                                <!-- Not sure about those awards' icons because they all have two indibidual elements - an award icon and a small flag.
+                                    If it's a static image it can be done with css only, but if this things are generic i should use an "img" tag for both elements.
+                                    In this case I consider them static and use css and its' background image.
+                                -->
+                                <li class="title-screen__award title-screen__award_bigger">
+                                    <div class="title-screen__award-icon title-screen_top title-screen_globe"></div>
+                                    <span class="title-screen__award-name title-screen__award_highlighted">Lorem ipsum dol</span>
+                                </li>
+                                <li class="title-screen__award">
+                                    <div class="title-screen__award-icon title-screen_regular title-screen_eu"></div>
+                                    <span class="title-screen__award-name">Lorem ipsum dol</span>
+                                </li>
+                                <li class="title-screen__award">
+                                    <div class="title-screen__award-icon title-screen_medal title-screen_eu"></div>
+                                    <span class="title-screen__award-name">Lorem ipsum dol</span>
+                                </li>
+                                <li class="title-screen__award">
+                                    <div class="title-screen__award-icon title-screen_regular title-screen_rf"></div>
+                                    <span class="title-screen__award-name">Lorem ipsum dol</span>
+                                </li>
+                            </ul>
+                            <button class="title-screen__button wow fadeIn" data-wow-delay=".15s">lorem ipsum dolor</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a id="second-block" class="anchor"></a>
+        <section class="section second">
+            <div class="container-fluid">
+                <h2 class="h2 wow fadeInDown">SECOND BLOCK</h2>
+                <div class="carousel__content">
+                    <div class="row">
+                        <div class="col-lg-5 col-lg-offset-1 vcenter">
+                            <h3 class="h3 wow fadeIn">ЛОРЕМОВА</h3>
+                            <p class="h3__subtitle wow fadeIn">ИПСУМА АНАТОЛЬЕВНА</p>
+                            <div class="sign wow fadeIn" data-wow-delay=".1s">lorem ipsum dolor</div>
+                            <ul class="list wow fadeIn" data-wow-delay=".2s">
+                                <li class="list__item">lorem ipsum dolor lorem ipsum dolor</li>
+                                <li class="list__item">lorem ipsum dolor</li>
+                                <li class="list__item">lorem ipsum dolor lorem ipsum dolorlorem ipsum dolorlorem ipsum</li>
+                                <li class="list__item">lorem ipsum dolor</li>
+                                <li class="list__item">lorem ipsum dolor</li>
+                                <li class="list__item">lorem ipsum dolor</li>
+                            </ul>
+                            <div class="wow fadeIn" data-wow-delay=".3s">
+                                <h4 class="h4">lorem ipsum dolor</h4>
+                                <p class="p">lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor</p>
+                                <h4 class="h4">lorem ipsum dolor</h4>
+                                <p class="p">lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-lg-offset-1 vcenter">
+                            <img class="carousel__image wow fadeIn" data-wow-delay=".1s" src="./images/potato.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__pagination">
+                    <button class="carousel__arrow carousel__arrow_left"></button>
+                    <span class="carousel__page">1/5</span>
+                    <button class="carousel__arrow carousel__arrow_right"></button>
+                </div>
+            </div>
+        </section>
+
+        <a id="third" class="anchor"></a>
+        <section class="section third">
+            <div class="container-fluid">
+                <h2 class="h2 wow fadeInDown">THIRD BLOCK</h2>
+                <div class="row third__row">
+                    <div class="col-sm-3">
+                        <a href="#" class="third__item wow flipInX">
+                            <img src="./images/facebook.jpg" alt="facebook" class="third__logo">
+                        </a>
+                        <div class="wow slideInUp">
+                            <h4 class="h4 third__link"><a class="h4__link" href="#">Lorem ipsum dolor sit amet.</a></h4>
+                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#" class="third__item wow flipInX" data-wow-delay=".05s">
+                            <img src="./images/amazon.jpg" alt="amazon" class="third__logo">
+                        </a>
+                        <div class="wow slideInUp" data-wow-delay=".05s">
+                            <h4 class="h4"><a class="h4__link" href="#">Lorem ipsum dolor sit amet.</a></h4>
+                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#" class="third__item wow flipInX" data-wow-delay=".1s">
+                            <img src="./images/sony.jpg" alt="sony" class="third__logo">
+                        </a>
+                        <div class="wow slideInUp" data-wow-delay=".1s">
+                            <h4 class="h4"><a class="h4__link" href="#">Lorem ipsum dolor sit amet.</a></h4>
+                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#" class="third__item wow flipInX" data-wow-delay=".15s">
+                            <img src="./images/ae.jpg" alt="ae" class="third__logo">
+                        </a>
+                        <div class="wow slideInUp" data-wow-delay=".15s">
+                            <h4 class="h4"><a class="h4__link" href="#">Lorem ipsum dolor sit amet.</a></h4>
+                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <a href="#" class="third__item wow flipInX">
+                            <img src="./images/facebook.jpg" alt="facebook" class="third__logo">
+                        </a>
+                        <div class="wow slideInUp">
+                            <h4 class="h4 third__link"><a class="h4__link" href="#">Lorem ipsum dolor sit amet.</a></h4>
+                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#" class="third__item wow flipInX" data-wow-delay=".05s">
+                            <img src="./images/amazon.jpg" alt="amazon" class="third__logo">
+                        </a>
+                        <div class="wow slideInUp" data-wow-delay=".05s">
+                            <h4 class="h4"><a class="h4__link" href="#">Lorem ipsum dolor sit amet.</a></h4>
+                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#" class="third__item wow flipInX" data-wow-delay=".1s">
+                            <img src="./images/sony.jpg" alt="sony" class="third__logo">
+                        </a>
+                        <div class="wow slideInUp" data-wow-delay=".1s">
+                            <h4 class="h4"><a class="h4__link" href="#">Lorem ipsum dolor sit amet.</a></h4>
+                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#" class="third__item wow flipInX" data-wow-delay=".15s">
+                            <img src="./images/ae.jpg" alt="ae" class="third__logo">
+                        </a>
+                        <div class="wow slideInUp" data-wow-delay=".15s">
+                            <h4 class="h4"><a class="h4__link" href="#">Lorem ipsum dolor sit amet.</a></h4>
+                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+       <div class="container-fluid">
+           <span class="footer__copyright">© Some copyright 2020</span>
+           <a href="#" class="footer__logo">
+               <img src="./images/footer-logo.png" alt="logo">
+            </a>
+       </div>
+    </footer>
+</body>
+</html>

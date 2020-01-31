@@ -1,0 +1,18 @@
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__copyright {
+        font-family: $museo;
+        font-size: 1rem;
+        line-height: 52px;
+        color: $black;
+        vertical-align: middle;
+    }
+
+    &__logo {
+        display: inline-block;
+        vertical-align: middle;
+        float: right;
+    }
+}

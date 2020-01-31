@@ -1,0 +1,103 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding-top: 25px;
+    padding-bottom: 1rem;
+
+    z-index: 2000;
+
+    transition: .2s ease;
+
+    &_scrolled {
+        padding-top: 1rem;
+        background-color: rgba(2,2,2,.5);
+        backdrop-filter: blur(6px);
+
+        & .header__nav {
+            align-items: center;
+        }
+
+        & .header__nav-item {
+            margin: 0;
+        }
+
+        & .header__nav-link {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+
+    &_mobile_show {
+        background-color: rgba(2,2,2,.8);
+
+        animation: slideDown .3s ease forwards;
+
+        & .header__ul {
+            display: block;
+        }
+    }
+
+    &__right {
+        float: right;
+    }
+
+    &__phone {
+        font-family: $museo;
+        font-size: 24px;
+        color: $white;
+
+        &:hover {
+            color: $accent;
+            text-decoration: none;
+        }
+
+        &:before {
+            content: "";
+            display: inline-block;
+
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display: inline-block;
+
+    }
+
+    &__ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__nav-item {
+        display: inline-block;
+    }
+
+    &__nav-link {
+        padding: 1rem;
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+        }
+    }
+
+    &__btn {
+        display: none;
+        font-size: 1.5rem;
+        padding: .5rem 1rem;
+        color: $white;
+        background: none;
+        outline: none;
+        border: none;
+    }
+}
