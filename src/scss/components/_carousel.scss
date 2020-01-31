@@ -22,7 +22,7 @@
             left: 50%;
             transform: translateX(-50%);
             display: block;
-            width: 90%;
+            width: 94%;
             height: 100%;
             background-color: $white;
             z-index: -1;
@@ -42,7 +42,29 @@
         text-align: center;
     }
 
+    &__page {
+        vertical-align: middle;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
     &__arrow {
         display: inline-block;
+        height: 30px;
+        width: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+        background: none;
+        outline: none;
+        vertical-align: middle;
+    }
+
+    &__arrow_left {
+        background-image: url(../assets/images/left-arrow.png);
+    }
+
+    &__arrow_right {
+        background-image: url(../assets/images/right-arrow.png);
     }
 }
