@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     width: 100vw;
-    padding-top: 4rem;
+    padding-top: 25px;
     padding-bottom: 1rem;
 
     z-index: 2000;
@@ -38,6 +38,27 @@
         }
     }
 
+    &__right {
+        float: right;
+    }
+
+    &__phone {
+        font-family: $museo;
+        font-size: 24px;
+        color: $white;
+
+        &:hover {
+            color: $accent;
+            text-decoration: none;
+        }
+
+        &:before {
+            content: "";
+            display: inline-block;
+
+        }
+    }
+
     &__nav {
         display: flex;
         flex-wrap: wrap;
@@ -45,13 +66,9 @@
         align-items: center;
     }
 
-    &__logo-link {
+    &__logo {
         display: inline-block;
-        font-family: $lato;
-        font-size: 2rem;
-        font-weight: 400;
-        color: $white;
-        text-decoration: none;
+
     }
 
     &__ul {
@@ -67,14 +84,10 @@
 
     &__nav-link {
         padding: 1rem;
-        font-family: $lato;
-        font-size: 1rem;
-        font-weight: 400;
         color: $white;
         text-decoration: none;
 
         &:hover {
-            color: $l-gray;
         }
     }
 
@@ -86,52 +99,5 @@
         background: none;
         outline: none;
         border: none;
-    }
-}
-
-@include media-breakpoint-down(md) {
-    .header {
-        &__ul {
-            display: none;
-            width: 100%;
-            margin-top: 1.5rem;
-            padding-top: 1rem;
-            border-top: 1px solid #676767;
-        }
-
-        &__nav-item {
-            display: block;
-        }
-
-        &__nav-link {
-            display: block;
-            padding-left: 0;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        &__btn {
-            display: inline-block;
-        }
-    }
-}
-
-@include media-breakpoint-down(xs) {
-    .header {
-        padding-top: 2rem;
-        &__logo-link {
-            font-size: 1.5rem;
-        }
-    }
-}
-
-@keyframes slideDown {
-    from {
-        height: 50%;
-    }
-
-    to {
-        height: 100%;
     }
 }
