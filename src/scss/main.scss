@@ -1,8 +1,10 @@
-@import './abstracts/variables';
-// @import './mixins/center';
+@import "./abstracts/variables";
+// @import "./mixins/center";
 
-// @import './vendors/bootstrap-custom';
-// @import './vendors/owl-carousel.theme';
+// @import "./vendors/bootstrap-custom";
+// @import "./vendors/owl-carousel.theme";
 
-@import './base/base';
-// @import './base/fonts';
+@import "./base/base";
+@import "./base/fonts";
+
+@import "./components/typoraphy";
