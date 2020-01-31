@@ -1,29 +1,66 @@
 .title-screen {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-image: url(../assets/images/title_screen.jpeg);
+    padding-top: 188px;
+    padding-bottom: 84px;
+    background-image: url(../assets/images/hero.png);
     background-size: cover;
 
-    &__content {
+    &__awards {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 110px;
+    }
+
+    &__award {
+        position: relative;
+    }
+
+    &__award-icon {
+        content: "";
+        display: inline-block;
+        height: 70px;
+        width: 70px;
+        margin-right: 52px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__award_highlighted {
+        background-color: $accent;
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+    
+    &__award_top {
+        background-image: url(../assets/images/top-award.png);
+    }
+
+    &__award_regular {
+        background-image: url(../assets/images/regular.png);
+    }
+
+    &__award_medal {
+        background-image: url(../assets/images/medal.png);
+    }
+
+    &__award-name {
+        position: absolute;
+        top: 50%;
+        left: 122px;
+        transform: translateY(-50%);
+        font-family: "Museo";
+        font-size: 24px;
         color: $white;
     }
-}
 
-@include media-breakpoint-down(md) {
-    .title-screen {
-      
-    }
-}
-
-@include media-breakpoint-down(sm) {
-    .title-screen {
-        
-    }
-}
-
-@include media-breakpoint-down(xs) {
-    .title-screen {
+    &__button {
+        padding: 22px 82px;
+        background-color: $accent;
+        font-family: "Museo";
+        font-size: 20px;
+        color: $white;
+        border: none;
+        border-radius: 4px;
+        text-align: center;
     }
 }
