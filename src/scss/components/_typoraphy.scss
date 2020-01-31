@@ -59,6 +59,15 @@
     color: $black;
 }
 
+.h4__link {
+    color: $black;
+
+    &:hover {
+        color: $gray;
+        text-decoration: none;
+    }
+}
+
 .p {
     margin: 0;
     margin-bottom: 1rem;

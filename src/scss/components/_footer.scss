@@ -1,31 +1,18 @@
 .footer {
-    color: $white;
-    background-color: $black;
-
-    &__logo {
-        font-size: 2.5rem;
-    }
-
-    &__logo-link {
-        color: white;
-        text-decoration: none;
-
-        &:hover {
-            color: $l-gray;
-        }
-    }
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     &__copyright {
-        text-align: center;
-        font-family: $lato;
+        font-family: $museo;
         font-size: 1rem;
-        font-weight: 400;
-        color: $gray;
+        line-height: 52px;
+        color: $black;
+        vertical-align: middle;
     }
-}
 
-@include media-breakpoint-down(sm) {
-    .footer {
-
+    &__logo {
+        display: inline-block;
+        vertical-align: middle;
+        float: right;
     }
 }
