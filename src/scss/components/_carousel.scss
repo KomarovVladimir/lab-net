@@ -1,0 +1,18 @@
+.carousel {
+    
+    &__content {
+        margin-bottom: 70px;
+    }
+    
+    &__pagination {
+        font-family: $museo;
+        font-size: 24px;
+        line-height: 1.5;
+        color: $black;
+        text-align: center;
+    }
+
+    &__arrow {
+        display: inline-block;
+    }
+}

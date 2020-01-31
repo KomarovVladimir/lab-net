@@ -1,23 +1,4 @@
 .section {
-    padding-top: 7.5rem;
-    padding-bottom: 9rem;
-}
-
-@include media-breakpoint-down(md) {
-    .section {
-      
-    }
-}
-
-@include media-breakpoint-down(sm) {
-    .section {
-        
-    }
-}
-
-@include media-breakpoint-down(xs) {
-    .section {
-        padding-top: 4rem;
-        padding-bottom: 4.5rem;
-    }
+    padding-top: 90px;
+    padding-bottom: 90px;
 }

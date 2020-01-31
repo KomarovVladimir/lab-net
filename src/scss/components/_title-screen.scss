@@ -24,12 +24,6 @@
         background-position: center;
         background-repeat: no-repeat;
     }
-
-    &__award_highlighted {
-        background-color: $accent;
-        padding: 4px 8px;
-        border-radius: 4px;
-    }
     
     &__award_top {
         background-image: url(../assets/images/top-award.png);
@@ -51,6 +45,13 @@
         font-family: "Museo";
         font-size: 24px;
         color: $white;
+    }
+    
+    &__award_highlighted {
+        background-color: $accent;
+        font-size: 36px;
+        padding: 4px 8px;
+        border-radius: 4px;
     }
 
     &__button {

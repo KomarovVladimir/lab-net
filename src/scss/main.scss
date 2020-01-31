@@ -1,5 +1,4 @@
 @import "./abstracts/variables";
-// @import "./mixins/center";
 
 @import "./vendors/bootstrap-custom";
 
@@ -9,6 +8,7 @@
 @import "./layout/main";
 @import "./components/typoraphy";
 @import "./components/title-screen";
-// @import "./components/typoraphy";
-// @import "./components/typoraphy";
+@import "./components/section";
+@import "./components/list";
+@import "./components/carousel";
 
