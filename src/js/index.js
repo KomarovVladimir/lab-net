@@ -1,8 +1,8 @@
 //styles
+import "../css/vendors/bootstrap.css";
 import "normalize.css";
 import "../scss/main.scss";
 import "animate.css/animate.min.css";
-// import "../css/vendors/bootstrap.css";
 
 //js
 import "./header";
