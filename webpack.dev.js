@@ -103,7 +103,7 @@ const config = {
     }),
     new CopyWebpackPlugin([
       { 
-        from: './src/assets/images/public', 
+        from: './src/assets/images', 
         to: 'images'
       },
       { 
@@ -117,7 +117,7 @@ const config = {
         "window.jQuery": "jquery",
         "window.$": "jquery"
     }),
-    new BundleAnalyzerPlugin()
+    // new BundleAnalyzerPlugin()
   ],
   optimization: {
     runtimeChunk: 'single',
