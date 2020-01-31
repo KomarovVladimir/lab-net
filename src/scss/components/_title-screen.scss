@@ -23,6 +23,8 @@
         margin-right: 52px;
         background-position: center;
         background-repeat: no-repeat;
+        vertical-align: middle;
+
     }
     
     &__award_top {
@@ -38,10 +40,8 @@
     }
 
     &__award-name {
-        position: absolute;
-        top: 50%;
-        left: 122px;
-        transform: translateY(-50%);
+        display: inline-block;
+        vertical-align: middle;
         font-family: "Museo";
         font-size: 24px;
         color: $white;
