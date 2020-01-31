@@ -1,17 +1,17 @@
-// STYLES
-import 'normalize.css';
-import '../scss/main.scss';
-import 'owl.carousel/dist/assets/owl.carousel.min.css'
-import 'animate.css/animate.min.css';
-import '@fortawesome/fontawesome-free/css/fontawesome.min.css'
-import '@fortawesome/fontawesome-free/css/solid.min.css'
+//styles
+import "normalize.css";
+import "../scss/main.scss";
+import "animate.css/animate.min.css";
+import "../css/vendors/bootstrap.css";
 
-//JS
-import 'owl.carousel/dist/owl.carousel.min.js';
-import './header';
-import './portfolio';
-import './reviews';
-import './faq';
-import WOW from 'wow.js/dist/wow.min.js';
+//js
+import "./header";
+import WOW from "wow.js/dist/wow.min.js";
+import "./bootstrap.js";
 
 new WOW().init();
+
+// //init bootstrap's carousel
+// $('.carousel').carousel({
+//     interval: 2000
+// });

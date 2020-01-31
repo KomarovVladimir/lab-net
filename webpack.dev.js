@@ -99,7 +99,7 @@ const config = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/assets/templates/index.html',
-      title: 'Construction Co.'
+      title: 'Lab Net Test.'
     }),
     new CopyWebpackPlugin([
       { 
