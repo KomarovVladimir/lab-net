@@ -7,8 +7,6 @@
 
     z-index: 2000;
 
-    transition: .2s ease;
-
     &_scrolled {
         padding-top: 1rem;
         background-color: $white;
@@ -47,12 +45,6 @@
     &_mobile_show {
         background-color: $white;
 
-        animation: slideDown .3s ease forwards;
-
-        & .header__ul {
-            display: block;
-        }
-
         .header__phone {
             color: $black;
         }
@@ -71,7 +63,10 @@
     }
 
     &__right {
+        display: inline-block;
         float: right;
+        vertical-align: middle;
+        line-height: 58px;
     }
 
     &__mobile-hidden {
@@ -102,7 +97,7 @@
             top: 0;
             left: -40px;
             display: inline-block;
-            height: 32px;
+            height: 58px;
             width: 32px;
             background-image: url(../assets/images/call.png);
             background-position: center;
@@ -128,13 +123,6 @@
         background-image: url(../assets/images/bars-closed.png);
     }
 
-    &__nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     &__logo {
         content: "";
         display: inline-block;
@@ -144,25 +132,36 @@
         fill: $white;
         background-position: center;
         background-repeat: no-repeat;
+        vertical-align: middle;
     }
+}
 
-    &__ul {
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-    }
 
-    &__nav-item {
-        display: inline-block;
-    }
-
-    &__nav-link {
-        padding: 1rem;
-        color: $white;
-        text-decoration: none;
-
-        &:hover {
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .header {
+        &__mobile-hidden {
+           display: none;
         }
     }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
 }
