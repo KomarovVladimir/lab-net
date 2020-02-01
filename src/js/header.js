@@ -13,8 +13,10 @@ $(function() {
         }
     });
 
-    $('#header-btn').click(function() {
-        $('.header').toggleClass('header_mobile_show')
+    $('#header-button').click(function() {
+        console.log(123123);
+        $('#header-button').toggleClass('header__button_active');
+        $('.header').toggleClass('header_mobile_show');
     });
 
     $('.header__nav-item').click(() => {
