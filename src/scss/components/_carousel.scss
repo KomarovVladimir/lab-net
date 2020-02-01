@@ -1,5 +1,5 @@
 .carousel {
-    &__content {
+    &__item {
         position: relative; 
         margin-bottom: 70px;
 
@@ -61,10 +61,12 @@
     }
 
     &__arrow_left {
+        margin-right: 52px;
         background-image: url(../assets/images/left-arrow.png);
     }
 
     &__arrow_right {
+        margin-left: 52px;
         background-image: url(../assets/images/right-arrow.png);
     }
 }
