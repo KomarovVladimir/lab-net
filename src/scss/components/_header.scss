@@ -7,8 +7,6 @@
 
     z-index: 2000;
 
-    transition: .2s ease;
-
     &_scrolled {
         padding-top: 1rem;
         background-color: $white;
@@ -136,4 +134,34 @@
         background-repeat: no-repeat;
         vertical-align: middle;
     }
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .header {
+        &__mobile-hidden {
+           display: none;
+        }
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
 }
