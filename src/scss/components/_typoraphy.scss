@@ -72,7 +72,7 @@
     margin: 0;
     margin-bottom: 1rem;
     font-family: $museo;
-    size: 1rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -101,43 +101,28 @@
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
+    .h1 {
+        font-size: 60px;
 
+        &__subtitle {
+            font-size: 2.8rem;
+        }
+    }
+    
+    .h2 {
+        font-size: 40px;
+    }
+    
+    .h3 {
+        font-size: 40px;
+    
+        &__subtitle {
+            font-size: 20px;
+        }
+    }
 }
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
 
 }
-
-// @include media-breakpoint-down(md) {
-//     .h1 {
-//         font-size: 3rem;
-        
-//         &__subtitle {
-//             font-size: 1.5rem;
-//         }
-//     }
-    
-//     .h2 {
-//         margin-bottom: 4rem;
-//         font-size: 2.5rem;
-//     }
-
-//     .h3 {
-//         margin-bottom: 1.25rem;
-//     }
-// }
-
-// @include media-breakpoint-down(sm) {
-//     .h2 {
-//         margin-bottom: 3rem;
-//         font-size: 2.5rem;
-//     }
-
-//     .h3 {
-//         margin-bottom: 1.25rem;
-//     }
-// }
-
-// @include media-breakpoint-down(xs) {
-// }

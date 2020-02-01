@@ -19,3 +19,14 @@
         }
     }
 }
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .list {
+        &__item {
+            &:before {
+                margin-right: 20px;
+            }
+        }
+    }
+}
