@@ -11,8 +11,12 @@
 
     &_scrolled {
         padding-top: 1rem;
-        background-color: rgba(2,2,2,.5);
-        backdrop-filter: blur(6px);
+        background-color: $white;
+        color: $black;
+
+        & .header__logo {
+            background-image: url(../assets/images/logo-black.png);
+        }
 
         & .header__nav {
             align-items: center;
@@ -26,15 +30,43 @@
             padding-top: 1rem;
             padding-bottom: 1rem;
         }
+
+        .header__phone {
+            color: $black;
+        }
+
+        & .header__button {
+            background-image: url(../assets/images/bars-black.png);
+        }
+
+        & .header__button_active {
+            background-image: url(../assets/images/bars-closed.png);
+        }
     }
 
     &_mobile_show {
-        background-color: rgba(2,2,2,.8);
+        background-color: $white;
 
         animation: slideDown .3s ease forwards;
 
         & .header__ul {
             display: block;
+        }
+
+        .header__phone {
+            color: $black;
+        }
+
+        & .header__logo {
+            background-image: url(../assets/images/logo-black.png);
+        }
+
+        & .header__button {
+            background-image: url(../assets/images/bars-black.png);
+        }
+
+        & .header__button_active {
+            background-image: url(../assets/images/bars-closed.png);
         }
     }
 
@@ -104,8 +136,14 @@
     }
 
     &__logo {
+        content: "";
         display: inline-block;
-
+        width: 220px;
+        height: 58px;
+        background-image: url(../assets/images/logo.png);
+        fill: $white;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     &__ul {
