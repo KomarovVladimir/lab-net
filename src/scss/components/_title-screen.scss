@@ -98,3 +98,20 @@
         text-transform: uppercase;
     }
 }
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .title-screen {
+        &__award-icon {
+            margin-right: 32px;
+        }
+
+        &__award_highlighted {
+            font-size: 26px;
+        }
+
+        &__awards {
+            margin-bottom: 60px;
+        }
+    }
+}
