@@ -42,7 +42,19 @@
         float: right;
     }
 
+    &__mobile-hidden {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 50px;
+    }
+
     &__phone {
+        position: relative;
         font-family: $museo;
         font-size: 24px;
         color: $white;
@@ -54,9 +66,34 @@
 
         &:before {
             content: "";
+            position: absolute;
+            top: 0;
+            left: -40px;
             display: inline-block;
-
+            height: 32px;
+            width: 32px;
+            background-image: url(../assets/images/call.png);
+            background-position: center;
+            background-repeat: no-repeat
         }
+    }
+
+    &__button {
+        display: inline-block;
+        height: 32px;
+        width: 50px;
+        color: $white;
+        background: none;
+        outline: none;
+        border: none;
+        background-image: url(../assets/images/bars.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+    }
+
+    &__button_active {
+        background-image: url(../assets/images/bars-closed.png);
     }
 
     &__nav {
@@ -89,15 +126,5 @@
 
         &:hover {
         }
-    }
-
-    &__btn {
-        display: none;
-        font-size: 1.5rem;
-        padding: .5rem 1rem;
-        color: $white;
-        background: none;
-        outline: none;
-        border: none;
     }
 }
