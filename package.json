@@ -46,5 +46,10 @@
     "webpack-cli": "^3.3.9",
     "webpack-merge": "^4.2.2",
     "wow.js": "^1.2.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
   }
 }
