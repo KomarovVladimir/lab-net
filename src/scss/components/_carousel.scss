@@ -52,22 +52,27 @@
         display: inline-block;
         height: 30px;
         width: 30px;
-        background-position: center;
-        background-repeat: no-repeat;
         border: none;
         background: none;
         outline: none;
         vertical-align: middle;
+        background-image: url(../assets/images/arrow.png);
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &:hover {
+            background-image: url(../assets/images/arrow-active.png);
+        }
     }
 
     &__arrow_left {
         margin-right: 52px;
-        background-image: url(../assets/images/left-arrow.png);
+
+        transform: rotate(180deg);
     }
 
     &__arrow_right {
         margin-left: 52px;
-        background-image: url(../assets/images/right-arrow.png);
     }
 
     &__button {

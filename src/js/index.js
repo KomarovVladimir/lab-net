@@ -13,6 +13,7 @@ import "owl.carousel/dist/owl.carousel.min.js";
 new WOW().init();
 
 $(document).ready(function(){
+    //carousel
     let owl = $(".owl-carousel");
     owl.owlCarousel({
         items: 1,
@@ -21,6 +22,8 @@ $(document).ready(function(){
         navClass: ["carousel__arrow carousel__arrow_left", "carousel__arrow carousel__arrow_right"],
         navText: ""
     });
+
+    //pagination
     const items =$(".owl-item").length;
     $(`<span id='carousel-pagination' class='carousel__page'>1 / ${items}</span>`).insertAfter(".carousel__arrow_left");
     let paginator = $("#carousel-pagination");
@@ -28,4 +31,10 @@ $(document).ready(function(){
     owl.on("changed.owl.carousel", function(e) {
         $(paginator).text(`${e.item.index + 1} / ${items}`);
     });
+
+    //selector
+    $(".years__item").on("click", function() {
+        $(".years_active").removeClass("years_active");
+        $(this).addClass("years_active");
+    })
 });
